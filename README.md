@@ -4,27 +4,38 @@ Ubuntu 22.04 / MATEの従来デスクトップをブラウザで開き、Termina
 
 保存イメージや過去コンテナ、既存のモデルVolumeは不要。公開固定イメージ、固定CRANE+ソース、Fuel資産、固定モデルblobを取得する。元の `/entrypoint.sh`、MATE/Marco、fcitx/Mozc、TigerVNC、Supervisor、`/usr/lib/novnc`を利用し、コンテナ80番をMac/Linuxの6080番へ公開する。独自GUIへの置換は行わない。
 
-## 現在の確認状況
-
-2026-10-29、公開固定親からのbuild、新規モデル取得、Ubuntu内の日本語入力→Qwen二重解釈→C03→青/黄/緑への訪問→Home復帰、再開後の青/青/黄への再訪、未対応要求のgoal 0拒否を実測した。最終検証の判定は [復元検証記録](docs/RESTORATION_REPORT_20261029.md) を参照。未実施をPASSとは扱わない。公開GitHub URLは未提供のため、GitHubからのclone実証は未実施。
-
 ## 1. 前提条件とclone
 
 - Git、Python 3.10以上、Docker EngineまたはDocker Desktop、Docker Compose v2。ホストPythonの追加pipライブラリは不要。
-- コンテナはlinux/amd64。Mac Apple SiliconはDocker Desktopのamd64互換実行を有効にする。native arm64/Windows/実機は未検証。
+- コンテナはlinux/amd64。Mac Apple SiliconではDocker Desktopのamd64互換実行を使用する。native arm64・Windows・実機での実行手順はこのREADMEの対象外。
 - 推奨：CPU 8コア、ホストRAM 16GiB、Docker VM RAM 8GiB以上、初回空きディスク50GiB以上。モデルは約1.93GB。コンテナ上限RAM 7GiB、追加swapなし。CPU互換実行では推論が遅くなる。
 - 初回はDocker Hub、GitHub/codeload、fuel.gazebosim.org、registry.ollama.aiとredirect先へのHTTPS接続が必要。
 - デスクトップはホストの127.0.0.1のみへ公開する。既定パスワードubuntu。ROSはdomain 42、localhost限定、実機デバイス・host networkは使用しない。
 
-提出先URLは未確定。公開後の実URLを以下へ指定する。
+MacまたはLinuxの**ホストOSのターミナル**で、以下を順番に実行する。Ubuntuコンテナ内のターミナルではない。
 
 ```sh
-git clone <提出先GitHubリポジトリURL> physical-ai
+git clone https://github.com/kinjisato/PhysicalAI-Final-Project.git physical-ai
 cd physical-ai
 python3 -B tools/verify_source.py
 python3 -B tests/test_release.py
 python3 -B tests/test_distribution.py
 ```
+
+### 1-A. 実行前の確認
+
+1. Docker Desktop（Mac）またはDocker Engine（Linux）を起動する。Docker Desktopの場合は起動完了まで待つ。
+2. ターミナルで次を実行し、DockerとComposeが利用できることを確認する。
+
+```sh
+docker version
+docker compose version
+python3 --version
+git --version
+```
+
+3. Docker Desktopの設定でDocker仮想マシンのメモリが少なくとも8GiB確保されていることを確認する。Mac Apple Siliconではamd64（x86_64）のコンテナ互換実行が必要となる。既存のコンテナやイメージを削除する必要はない。
+4. ダウンロードの途中でエラーが出た場合は、原因を確認してから該当の取得手順をやり直す。ロボット制御中の自動再実行はしない。
 
 以後はREADMEのあるディレクトリで実行する。ZIP取得でも同じ構成で利用できる。`verify_source.py`は全公開ファイルのSHA256、凍結制御40ファイル、runner関数/classのAST、モデル同定値、Python/JSON構文を検査する。ハッシュ不一致時は停止する。
 
@@ -56,7 +67,7 @@ docker pull --platform linux/amd64 ollama/ollama@sha256:5c6707fcf2e1a30cffe2ecb7
 python3 -B tools/manage.py build
 ```
 
-生成タグは`pai-desktop:20261029`。公開元イメージから既存Ubuntu/ROS/MoveIt/Gazebo/MATEを利用し、固定Ollama CPUライブラリ、固定CRANE+のcolcon build、SDF RPC workerを追加する。GUIのapt追加やローカル保存イメージへのFROMは不要。元`/entrypoint.sh`のSHA256も照合する。既存ビルドcacheは利用し得るため、別ホストでの全層取得とは区別する。
+生成タグは`pai-desktop:20261029`。公開元イメージから既存Ubuntu/ROS/MoveIt/Gazebo/MATEを利用し、固定Ollama CPUライブラリ、固定CRANE+のcolcon build、SDF RPC workerを追加する。GUIのapt追加やローカル保存イメージへのFROMは不要。元`/entrypoint.sh`のSHA256も照合する。初回構築ではDocker Hubから必要なイメージを取得する。ネットワーク・CPU・保存先に応じて時間を要する。
 
 ## 5. 一体型コンテナを起動し、ブラウザで接続
 
@@ -69,6 +80,14 @@ python3 -B tools/manage.py up
 python3 -B tools/manage.py inspect
 ```
 
+### 5-A. ブラウザ操作の流れ
+
+- **この段階からはブラウザ上のUbuntuを操作する。** それまでの `git`、`python3`、`docker` コマンドはホストOSで実行する。
+- `python3 -B tools/manage.py up` の終了後、ブラウザのアドレスバーに `http://127.0.0.1:6080/vnc.html` と入力する（`PAI_WEB_PORT=6081` なら6081へ読み替える）。
+- noVNCの **Connect** を選び、パスワードを求められたら `ubuntu` を入力する。
+- Ubuntu/MATEのデスクトップが表示されたら、RVizのロボットと青・黄・緑の3対象を確認する。画面がまだ準備中なら、ログとコンテナ状態を確認する。準備できる前に日本語指示を出さない。
+- ロボットの視覚表示はRVizを使う。GazeboのGUIを別途開く必要はない。
+
 [Ubuntuデスクトップを開く](http://127.0.0.1:6080/vnc.html)。Connectを押し、求められたらパスワード`ubuntu`を入力する。従来と同じMATEパネル、移動・リサイズできるウィンドウ、Terminator、fcitx/Mozcを使用できる。Macの画面共有や追加VNCアプリは不要。
 
 `up/start`が完了する前に別のrun/casesを実行しない。準備中要求はCLIでも拒否する。起動にはROS起動、シーン生成、モデルhash照合、安全prepareが含まれる。通常5分以内を目安とする。Healthがhealthyになり、Terminatorに`日本語指示 >`が出るまで待つ。起動だけではタスク軌道を送らない。RVizにCRANE+と対象物が出ていることを確認する。Gazeboはserverとして動き、表示・操作はRVizを使用する。
@@ -77,7 +96,55 @@ python3 -B tools/manage.py inspect
 
 ## 6. Ubuntu内から日本語で動かす
 
-自動表示されるPhysical-AI Terminatorへ1行ずつ入力する。
+### 6-A. 日本語入力画面を開く
+
+Ubuntu/MATEのデスクトップに **Physical-AI** というTerminatorウィンドウが自動表示され、`日本語指示 >` という入力待ちの表示が出る。**通常のシェル画面（`bash-5.1#`、`root@...#` 等）とは異なる。**
+
+表示例：
+
+```text
+Physical AI / CRANE+ simulation
+RVizでロボットを確認してから日本語指示を入力してください。
+例: 青、黄、緑の順番に近づいて
+終了: exit   注意: 実機接続は禁止
+日本語指示 >
+```
+
+**自動表示されない場合：** UbuntuデスクトップのTerminatorを起動し、次を順番に実行する。これは**ブラウザ内のUbuntuターミナル**へ入力する。Macのターミナルに入力しない。
+
+```sh
+cd /opt/pai_release
+bash tools/desktop_shell.sh
+```
+
+もしUbuntu側のターミナルも開けない場合は、Mac側のターミナルから以下のコマンドでコンテナ内に入る代替経路も使える。コンテナ名は手順5で設定した `PAI_CONTAINER` を用いる。
+
+```sh
+docker exec -it -u root "$PAI_CONTAINER" /bin/bash
+```
+
+その後、表示された**コンテナ内**のシェルで次を実行する。
+
+```sh
+cd /opt/pai_release
+bash tools/desktop_shell.sh
+```
+
+`日本語指示 >` が表示されたら、次の日本語を1行入力してEnterを押す。入力された日本語はQwenで処理され、ROS/MoveItを経由してシミュレーション内のCRANE+を操作する。
+
+```text
+青、黄、緑の順番に近づいて
+```
+
+Qwenの処理にはCPUや実行環境により時間がかかることがある。**ターミナルに「実行中」と表示されても、直後にロボットが動くとは限らない。** 処理終了・実行結果のログとRVizの動きを確認する。
+
+**繰り返し実行する場合：** 前回処理が完了して再び `日本語指示 >` と表示されてから次の指示を入力する。`REQUEST.lock` の存在や安全停止のメッセージが出たときは、同時実行を避け、進行中の処理とログを確認する。動作中にロックを削除しない。
+
+**終了する場合：** `日本語指示 >` へ `exit` と入力する。`bash-5.1#` 等へ戻ったら通常のシェルコマンドが利用できる。通常シェルのまま日本語指示文を入力してもロボット指示にはならない。
+
+### 6-B. 日本語入力とテスト例
+
+日本語指示はPhysical-AI Terminatorへ1行ずつ入力する。
 
 ```text
 青、黄、緑の順番に近づいて
@@ -85,7 +152,7 @@ python3 -B tools/manage.py inspect
 青と黄色を見て。緑は見なくていい
 ```
 
-日本語IMEは元イメージのfcitx/Mozcを保持している。ただし今回のMac amd64互換実行ではMozc変換エンジンのエラーを観測した。表示された場合はOKで閉じ、noVNCサイドバーのClipboardへ原文を貼り付け、UbuntuのTerminatorで右クリック→Paste、またはCtrl+Shift+Vを使う。`exit`で入力画面を終了し、同じウィンドウでシェルを使用できる。デスクトップのPhysical AI gui/shellから再び開ける。
+日本語IMEは元イメージのfcitx/Mozcを保持している。Macのamd64互換環境ではMozc変換エンジンのエラーが出ることがある。表示された場合はOKで閉じ、noVNCサイドバーのClipboardへ原文を貼り付け、UbuntuのTerminatorで右クリック→Paste、またはCtrl+Shift+Vを使う。`exit`で入力画面を終了し、同じウィンドウでシェルを使用できる。デスクトップのPhysical AI gui/shellから再び開ける。
 
 RVizの現在のロボット姿勢が各色の対象へ順番に変化し、最後にHomeへ戻ることを観察する。Qwenはtemperature 0、seed 0/1で2回解釈し、Schema/C03・原文照合・二重一致・単回使用ticket後にMoveItで全経路を検査する。許可後には既存の低速停止診断を1回実行し、その後に対象訪問とHomeを行う。Home最大joint誤差0.025rad、同一対象の再訪離脱0.03radを維持する。制御ロジック・モデルID・安全条件は変更しない。
 
@@ -133,8 +200,8 @@ python3 -B tools/manage.py start
 - **Gazebo TransportNoReply/Host unreachable**：`scene.log`とsessionのtransport/exceptionを保全する。既知の長時間運転課題で、復旧成功を未確認のまま次の動作へ進めない。
 - **容量不足**：初回50GiBを目安に確保する。管理CLIはホスト残量2GiBを監視する。既存イメージ/Volume/ログの整理は自動実行しない。
 
-## 権利・適合性・制約
+## 権利・利用範囲
 
-[第三者表示](docs/THIRD_PARTY_NOTICES.md)、[独自コードの権利状態](LICENSE_STATUS.md)、[復元の差分と検証記録](docs/RESTORATION_REPORT_20261029.md)を参照。元の全28ケース成功、別ホスト再現、公開GitHub clone成功を未実施のまま主張しない。GPU、実機、把持、撮影、異常診断は範囲外。本番採用HOLD。
+[第三者ライセンス表示](docs/THIRD_PARTY_NOTICES.md)および[独自コードの権利状態](LICENSE_STATUS.md)を参照。対象はシミュレーションのみ。GPU・実機・把持・撮影・異常診断はこの操作手順の対象外。
 
 `Dockerfile.gui-overlay`と`tools/quick_browser_test.sh`は過去のローカル増分調査用として保全している。上の正式手順では使用しない。任意の既存モデルVolumeを明示的に利用する場合だけ`PAI_MODEL_VOLUME`と`compose.model-volume.yaml`を使用できるが、その経路は新規モデル取得の検証には含めない。
