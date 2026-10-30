@@ -1,0 +1,90 @@
+{
+  "source": "V5.11 runtime endpoints; B deterministic base rotation from success FK; C Home + 0.6*(left_overview_1-Home). All require fresh MoveIt validation.",
+  "source_execution_sha256": "00c745fc88eef483f6a27e8d783039907a23ab73a804ca217bb5871356f67c28",
+  "home": {
+    "crane_plus_joint1": -0.017210919661446895,
+    "crane_plus_joint2": -0.0006396892621998874,
+    "crane_plus_joint3": -0.00452983495537591,
+    "crane_plus_joint4": 0.011922944842782073
+  },
+  "targets": {
+    "A": {
+      "source_stage": "right_detail_2",
+      "factor": 1.0,
+      "q": {
+        "crane_plus_joint1": 0.28764526394306744,
+        "crane_plus_joint2": 0.4151041066181578,
+        "crane_plus_joint3": 1.3918588906869154,
+        "crane_plus_joint4": -0.4460514525007644
+      },
+      "gap_m": 0.035,
+      "size_m": [
+        0.02,
+        0.03,
+        0.035
+      ],
+      "rgba": [
+        0.05,
+        0.25,
+        1,
+        1
+      ]
+    },
+    "B": {
+      "source_stage": "center_scan_2",
+      "factor": 1.0,
+      "q": {
+        "crane_plus_joint1": -0.19084426976805902,
+        "crane_plus_joint2": -0.563597398933581,
+        "crane_plus_joint3": -0.26044779616518043,
+        "crane_plus_joint4": -0.004431962005770652
+      },
+      "gap_m": 0.048,
+      "size_m": [
+        0.05,
+        0.03,
+        0.035
+      ],
+      "rgba": [
+        1,
+        0.85,
+        0.05,
+        1
+      ],
+      "base_rotation_from_fk_rad": 1.0484511216044483,
+      "derivation": "Rotate the successful center_scan_2 TCP around base Z onto negative X (center, y=0)"
+    },
+    "C": {
+      "source_stage": "left_overview_1",
+      "factor": 0.6,
+      "q": {
+        "crane_plus_joint1": 0.9749176702491942,
+        "crane_plus_joint2": 0.3452240389446205,
+        "crane_plus_joint3": -0.24518303846653539,
+        "crane_plus_joint4": -0.00038393753110361854
+      },
+      "gap_m": 0.042,
+      "size_m": [
+        0.035,
+        0.03,
+        0.035
+      ],
+      "rgba": [
+        0.05,
+        0.85,
+        0.2,
+        1
+      ]
+    }
+  },
+  "tcp": {
+    "reference_link": "crane_plus_link_hand",
+    "offset_local_m": [
+      0.0,
+      -0.007299038115888833,
+      0.09289101511240005
+    ],
+    "definition": "Centre of maximum local-Z cap of Hand collision mesh after its URDF visual/collision rotation; gripper fixed at zero",
+    "mesh_sha256": "a168611127f4162c2911070afc18c02f1a591f2d569b9ec22b1a87db9a8ff079"
+  }
+}

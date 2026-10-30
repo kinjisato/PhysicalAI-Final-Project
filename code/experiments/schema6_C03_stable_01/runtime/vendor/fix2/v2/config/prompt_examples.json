@@ -1,0 +1,211 @@
+[
+  {
+    "input": "緑、青、黄の順で点検して",
+    "output": {
+      "requested_targets": [
+        "C",
+        "A",
+        "B"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "緑を見てから青、そのあと黄色をお願い",
+    "output": {
+      "requested_targets": [
+        "C",
+        "A",
+        "B"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "最初に黄色、続いて青、最後に緑を確認してください",
+    "output": {
+      "requested_targets": [
+        "B",
+        "A",
+        "C"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "緑、黄、緑、青の順で見て",
+    "output": {
+      "requested_targets": [
+        "C",
+        "B",
+        "C",
+        "A"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "青を2回確認して、そのあと黄色",
+    "output": {
+      "requested_targets": [
+        "A",
+        "A",
+        "B"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "青、青、黄、緑、青",
+    "output": {
+      "requested_targets": [
+        "A",
+        "A",
+        "B",
+        "C",
+        "A"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "赤、緑、黄色の順に点検して",
+    "output": {
+      "requested_targets": [
+        "赤",
+        "C",
+        "B"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "緑、赤、黄、紫、青",
+    "output": {
+      "requested_targets": [
+        "C",
+        "赤",
+        "B",
+        "紫",
+        "A"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "赤と紫だけ点検して",
+    "output": {
+      "requested_targets": [
+        "赤",
+        "紫"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "緑と青だけ見て",
+    "output": {
+      "requested_targets": [
+        "C",
+        "A"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "青と黄色を見て。緑は見なくていい",
+    "output": {
+      "requested_targets": [
+        "A",
+        "B"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "青、いや、最初は緑。そのあと黄色",
+    "output": {
+      "requested_targets": [
+        "C",
+        "B"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "CをチェックしてからAを確認して",
+    "output": {
+      "requested_targets": [
+        "C",
+        "A"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "最初に緑を見て、青を2回確認した後、最後に黄色",
+    "output": {
+      "requested_targets": [
+        "C",
+        "A",
+        "A",
+        "B"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "適当に点検して",
+    "output": {
+      "requested_targets": [],
+      "status": "clarification_required",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "青を掴んで移動して",
+    "output": {
+      "requested_targets": [],
+      "status": "unsupported",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "右側、中央、左側の順に確認して",
+    "output": {
+      "requested_targets": [
+        "A",
+        "B",
+        "C"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  },
+  {
+    "input": "高い対象、低い対象、中間の高さの順に点検して",
+    "output": {
+      "requested_targets": [
+        "B",
+        "A",
+        "C"
+      ],
+      "status": "ready",
+      "reason": "仕様例に従う"
+    }
+  }
+]

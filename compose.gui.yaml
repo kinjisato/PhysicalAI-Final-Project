@@ -1,0 +1,3 @@
+# Compatibility override: the native Ubuntu desktop is now enabled by default.
+services:
+  simulator: {}

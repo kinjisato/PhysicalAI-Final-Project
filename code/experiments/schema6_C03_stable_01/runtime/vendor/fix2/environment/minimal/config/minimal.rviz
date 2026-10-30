@@ -1,0 +1,128 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+- Class: rviz_common/Views
+  Name: Views
+Visualization Manager:
+  Class: ''
+  Displays:
+  - Class: moveit_rviz_plugin/PlanningScene
+    Enabled: true
+    Name: Gazebo execution / MoveIt scene
+    Planning Scene Topic: monitored_planning_scene
+    Robot Description: robot_description
+    Scene Geometry:
+      Scene Alpha: 1.0
+      Scene Color: 50; 230; 50
+      Scene Display Time: 0.009999999776482582
+      Show Scene Geometry: true
+      Voxel Coloring: Z-Axis
+      Voxel Rendering: Occupied Voxels
+    Scene Robot:
+      Attached Body Color: 150; 50; 150
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        crane_plus_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        crane_plus_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        crane_plus_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        crane_plus_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        crane_plus_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        crane_plus_link_hand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Robot Alpha: 1.0
+      Show Robot Collision: false
+      Show Robot Visual: true
+    Value: true
+  - Class: rviz_default_plugins/MarkerArray
+    Name: Target labels
+    Enabled: true
+    Marker Topic:
+      Value: /pai_minimal/labels
+      Depth: 1
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+    Namespaces: {}
+    Topic:
+      Value: /pai_minimal/labels
+      Depth: 1
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+  Enabled: true
+  Global Options:
+    Background Color: 235; 239; 244
+    Fixed Frame: crane_plus_base
+    Frame Rate: 30
+  Name: root
+  Tools:
+  - Class: rviz_default_plugins/MoveCamera
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 0.85
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -0.01
+        Y: 0.04
+        Z: 0.21
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.35
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 3.14159
+    Saved: null
+Window Geometry:
+  Height: 760
+  Width: 1280
+  X: 0
+  Y: 25
+  Hide Left Dock: true
+  Hide Right Dock: true

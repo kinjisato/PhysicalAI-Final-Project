@@ -1,0 +1,31 @@
+{
+  "model": "qwen2.5:3b",
+  "api_logical_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "manifest_file_sha256": "cd232a7a8d590449a99eb8fe29b614ef9bf3624d2d17faa496e1135ba4188be0",
+  "blobs": {
+    "sha256:357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b": {
+      "actual_sha256": "sha256:357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "bytes": 857
+    },
+    "sha256:b5c0e5cf74cf51af1ecbc4af597cfcd13fd9925611838884a681070838a14a50": {
+      "actual_sha256": "sha256:b5c0e5cf74cf51af1ecbc4af597cfcd13fd9925611838884a681070838a14a50",
+      "bytes": 7387
+    },
+    "sha256:eb4402837c7829a690fa845de4d7f3fd842c2adee476d5341da8a46ea9255175": {
+      "actual_sha256": "sha256:eb4402837c7829a690fa845de4d7f3fd842c2adee476d5341da8a46ea9255175",
+      "bytes": 1482
+    },
+    "sha256:66b9ea09bd5b7099cbb4fc820f31b575c0366fa439b08245566692c6784e281e": {
+      "actual_sha256": "sha256:66b9ea09bd5b7099cbb4fc820f31b575c0366fa439b08245566692c6784e281e",
+      "bytes": 68
+    },
+    "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6": {
+      "actual_sha256": "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6",
+      "bytes": 1929903008
+    },
+    "sha256:161ddde4c9cd07c9f1ccb4e0167c434bce72caeb3fc1844262fa66bc877b0426": {
+      "actual_sha256": "sha256:161ddde4c9cd07c9f1ccb4e0167c434bce72caeb3fc1844262fa66bc877b0426",
+      "bytes": 487
+    }
+  }
+}

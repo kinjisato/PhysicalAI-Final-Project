@@ -1,0 +1,23 @@
+# Local incremental GUI test on top of the previously verified ROS/Qwen image.
+# This is not a replacement for the clean GitHub Dockerfile build.
+ARG BASE_IMAGE=pai-verify28:20261029
+FROM --platform=linux/amd64 ${BASE_IMAGE}
+USER root
+# The prebuilt ROS 2 image contains an expired Open Robotics APT signing key.
+# ROS 2 is already installed: exclude ONLY its repository while installing GUI packages.
+# Restore source files afterwards; never bypass apt signature verification.
+RUN set -euo pipefail; \
+    disabled=(); \
+    restore_ros_sources() { for f in "${disabled[@]}"; do mv "${f}.pai-disabled" "$f"; done; }; \
+    trap restore_ros_sources EXIT; \
+    for f in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do \
+      if [[ -f "$f" ]] && grep -q 'packages.ros.org/ros2' "$f"; then \
+        mv "$f" "${f}.pai-disabled"; disabled+=("$f"); \
+      fi; \
+    done; \
+    apt-get update; \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+      novnc websockify xterm fonts-noto-cjk; \
+    test -f /usr/share/novnc/vnc.html; \
+    command -v websockify; \
+    rm -rf /var/lib/apt/lists/*

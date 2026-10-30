@@ -1,0 +1,90 @@
+name: ${PAI_PROJECT:-pai_github_all_desktop_20261029}
+services:
+  simulator:
+    image: ${PAI_IMAGE:-pai-desktop:20261029}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    pull_policy: never
+    platform: linux/amd64
+    container_name: ${PAI_CONTAINER:-pai_github_all_desktop_20261029}
+    labels:
+      pai.github.release: "20261028"
+    entrypoint: ["/bin/bash", "/opt/pai_release/tools/container_bootstrap.sh"]
+    environment:
+      USER: ubuntu
+      HOME: /home/ubuntu
+      LANG: ja_JP.UTF-8
+      RESOLUTION: ${PAI_RESOLUTION:-1600x900}
+      PASSWORD: ${PAI_DESKTOP_PASSWORD:-ubuntu}
+      PAI_PUBLIC_ROOT: /opt/pai_release
+      PAI_RUNTIME: /opt/pai_runtime
+      PAI_OUTPUT: /validation
+      ROS_DOMAIN_ID: "42"
+      ROS_LOCALHOST_ONLY: "1"
+      PAI_MINIMAL_SIM: "1"
+      PAI_V3_TESTING: "1"
+      CYCLONEDDS_URI: file:///opt/pai_release/docker/cyclonedds.xml
+      RMW_IMPLEMENTATION: rmw_cyclonedds_cpp
+      PYTHONDONTWRITEBYTECODE: "1"
+      OLLAMA_HOST: 127.0.0.1:11434
+      IGN_FUEL_CACHE_PATH: /opt/pai_resources/fuel
+    ports:
+      - "127.0.0.1:${PAI_WEB_PORT:-6080}:80"
+    shm_size: 1gb
+    mem_limit: 7g
+    memswap_limit: 7g
+    logging:
+      driver: json-file
+      options:
+        max-size: 4m
+        max-file: "2"
+    volumes:
+      - type: bind
+        source: .
+        target: /opt/pai_release
+        read_only: true
+      - type: bind
+        source: ./code/experiments/schema6_C03_stable_01/runtime
+        target: /workspace/pai_v3
+        read_only: true
+      - type: bind
+        source: ./code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal
+        target: /workspace/PhysicalAI_V5_Integrated/minimal
+        read_only: true
+      - type: bind
+        source: ./code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2
+        target: /workspace/pai_v2
+        read_only: true
+      - type: bind
+        source: ./code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/docker_run
+        target: /workspace/pai_launcher
+        read_only: true
+      - type: bind
+        source: ${PAI_VALIDATION:-./validation/${PAI_CONTAINER:-pai_github_all_desktop_20261029}}
+        target: /validation
+      - type: bind
+        source: ${PAI_VALIDATION:-./validation/${PAI_CONTAINER:-pai_github_all_desktop_20261029}}/baseline
+        target: /workspace/pai_v2/results
+      - type: bind
+        source: ${PAI_VALIDATION:-./validation/${PAI_CONTAINER:-pai_github_all_desktop_20261029}}/environment
+        target: /workspace/PhysicalAI_V5_Integrated/minimal/results
+      - type: bind
+        source: ./.cache/fuel
+        target: /opt/pai_resources/fuel
+        read_only: true
+      - type: bind
+        source: ./.cache/model-root
+        target: /model-source
+        read_only: true
+    networks: [sim_only]
+    stop_grace_period: 30s
+    healthcheck:
+      test: ["CMD", "python3", "-B", "/opt/pai_release/tools/readiness.py", "read"]
+      interval: 15s
+      timeout: 5s
+      start_period: 300s
+      retries: 3
+networks:
+  sim_only:
+    driver: bridge

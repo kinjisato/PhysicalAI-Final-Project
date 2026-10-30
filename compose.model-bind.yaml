@@ -1,0 +1,3 @@
+# Compatibility override: the newly fetched model bind is now the default.
+services:
+  simulator: {}

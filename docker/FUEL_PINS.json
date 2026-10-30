@@ -1,0 +1,145 @@
+{
+  "origin": "Pinned cached assets in immutable existing smoke image; sha256 read from a new read-only network-none probe",
+  "models": {
+    "Table": {
+      "version": 4,
+      "cache_relative": "fuel.gazebosim.org/openrobotics/models/table/4",
+      "files": {
+        "Table_Diffuse.jpg": {
+          "sha256": "d9891a81facea4747cf7b2b9c8891c0cadca50613b677bb8cab7ed5a8a601d23",
+          "bytes": 707345
+        },
+        "model-1_2.sdf": {
+          "sha256": "bf88c3ab3b045a307c681cbca58e677087e28195beefff418a704b4950579a65",
+          "bytes": 3614
+        },
+        "model-1_3.sdf": {
+          "sha256": "e524f0ab1225fbe90e69994895e3640d5be1f63ab25f955de9c7293ef80cdeb9",
+          "bytes": 3607
+        },
+        "model-1_4.sdf": {
+          "sha256": "f528ee4128390c49e8c83abcd45d4bb87abc80adefa0da620575f3615a517247",
+          "bytes": 3607
+        },
+        "model.config": {
+          "sha256": "135367bc4c08ce4757a069ad78f0f8d09868e645ba263fac6660ab34dc3cf3aa",
+          "bytes": 395
+        },
+        "model.sdf": {
+          "sha256": "99fb1778308e10e4c28bf66238e17fc6feef78bc6898c3ab40adfaea6613c2e6",
+          "bytes": 5355,
+          "formatting_variant": {
+            "sha256": "dea3ecaed69529d4d292910b1ea10582672b958e989df5af224ba3d405b1d37c",
+            "bytes": 4006,
+            "canonical_XML_after_same_texture_URI_resolution_sha256": "1ac21320b214442eb474d7d462918673c0547504f6509f75e93aea757cfa6c81",
+            "verified_difference": "Indentation and URI spelling for the same independently SHA256-pinned Table_Diffuse.jpg only; every other XML value including all collisions/friction/poses is identical. Download bytes are preserved, not physically repaired."
+          }
+        },
+        "thumbnails/1.png": {
+          "sha256": "7a7e9f0340cc5e6c3e9afd7b77b2dd7b18e0cc8faafbf314f946c2ef10621aa6",
+          "bytes": 44159
+        },
+        "thumbnails/2.png": {
+          "sha256": "743fe45be0dbdc9444c26596f51365e2f43c26825938dfe534b892da52fca4f3",
+          "bytes": 122653
+        },
+        "thumbnails/3.png": {
+          "sha256": "4d359f13ff490a6826456ea53b3389c16440c291188b0481eab7cbb499a0044e",
+          "bytes": 12773
+        },
+        "thumbnails/4.png": {
+          "sha256": "59c58cb5b244b30c8e2b2410689016f57d59f1ae3b0af6e226915fc5e6aca1f1",
+          "bytes": 9921
+        },
+        "thumbnails/5.png": {
+          "sha256": "092be99ebbbc048b2cb618624bb0beaedf49ef7f48ef71a95f360e107efb470f",
+          "bytes": 13034
+        }
+      }
+    },
+    "Sun": {
+      "version": 3,
+      "cache_relative": "fuel.gazebosim.org/openrobotics/models/sun/3",
+      "files": {
+        "model-1_2.sdf": {
+          "sha256": "ec06c2561585112e6acdc77f20ce827541ea0cb1bcf1d2eab08040f34ebddc3c",
+          "bytes": 453
+        },
+        "model-1_3.sdf": {
+          "sha256": "609613ac8ce6a38dbe6be5e2e1f7a43fa557696c5d4a4a48fa246957573d84a9",
+          "bytes": 447
+        },
+        "model-1_4.sdf": {
+          "sha256": "9ecf9281ed55a951e97b2fcb494a6d0e5a7247abff5208b2d53a06acb62b714a",
+          "bytes": 469
+        },
+        "model.config": {
+          "sha256": "f6d1f0e4b3919c21fc56ad24763275838944ec9acfc60bb86e2d31f23976688c",
+          "bytes": 410
+        },
+        "model.sdf": {
+          "sha256": "b10a6631cfac7340ad09c2fdfeb6d950afd3ec4daf1e7d0262c14adcf612d15a",
+          "bytes": 525,
+          "formatting_variant": {
+            "sha256": "df64a7139480ca4004629fb7bc3bf1e92b1bddc6ccfc143615a59786c837a4fb",
+            "bytes": 467,
+            "canonical_XML_sha256": "fe0323bc1d3c3b0ad42f8de4a4b8da8623a2915c8d69f3fcb97daff093bbf76a",
+            "verified_difference": "Whitespace/indentation only, same XML elements/attributes/numeric text; no values rewritten"
+          }
+        }
+      }
+    },
+    "Ground Plane": {
+      "version": 5,
+      "cache_relative": "fuel.gazebosim.org/openrobotics/models/ground%20plane/5",
+      "files": {
+        "model-1_2.sdf": {
+          "sha256": "a099ecca53ba1d0af3babacb31a4e802099d896926ea9109d38f2e14e40a28d9",
+          "bytes": 944
+        },
+        "model-1_3.sdf": {
+          "sha256": "cc2bf63d600f382bbbe81dbd3cd9363ee0436de6bda1c273cae47dfd8ea65bcf",
+          "bytes": 938
+        },
+        "model-1_4.sdf": {
+          "sha256": "de8e04148a6b58735b63ea7500811ca1a1bae174d6da3a20f861c679534ddc99",
+          "bytes": 938
+        },
+        "model.config": {
+          "sha256": "4fefe57461ff15dd0b8931e249616eb719cf6760767a85db84762d85186ca94b",
+          "bytes": 409
+        },
+        "model.sdf": {
+          "sha256": "73be59778d84e631dd0996a0adc461af5e4c8717b93da7ee9151b9ae43e3ca25",
+          "bytes": 1229,
+          "formatting_variant": {
+            "sha256": "73be59778d84e631dd0996a0adc461af5e4c8717b93da7ee9151b9ae43e3ca25",
+            "bytes": 1229,
+            "canonical_XML_sha256": "d68252f7b83d1a4afceb7170a8ac9594f3853c31dee4891e13d7be117fc062c8",
+            "verified_difference": "Whitespace/indentation only, same XML elements/attributes/numeric text; no values rewritten"
+          }
+        },
+        "thumbnails/1.png": {
+          "sha256": "19a31ae622180052518cf40518579f7bb1ce74cd1a2dd2e38fa260e821dd99c7",
+          "bytes": 4607
+        },
+        "thumbnails/2.png": {
+          "sha256": "3fa42da84beeb517daa91494f1ef1b18265dbf4c04b387e4c45682d9096be35a",
+          "bytes": 2766
+        },
+        "thumbnails/3.png": {
+          "sha256": "c423f7a4b11bfaf8db92cbe832f7fcfec1c5869edd9d974ea7e445425680c790",
+          "bytes": 2744
+        },
+        "thumbnails/4.png": {
+          "sha256": "c423f7a4b11bfaf8db92cbe832f7fcfec1c5869edd9d974ea7e445425680c790",
+          "bytes": 2744
+        },
+        "thumbnails/5.png": {
+          "sha256": "c423f7a4b11bfaf8db92cbe832f7fcfec1c5869edd9d974ea7e445425680c790",
+          "bytes": 2744
+        }
+      }
+    }
+  }
+}

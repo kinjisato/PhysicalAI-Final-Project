@@ -1,0 +1,12 @@
+.cache/
+validation/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+*.log
+*.mp4
+*.mov
+*.pdf
+*.gguf
+*.bin

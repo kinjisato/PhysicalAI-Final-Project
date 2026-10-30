@@ -1,0 +1,31 @@
+{
+  "base_image": "airobotbook/ros2-desktop-ai-robot-book-humble@sha256:b58ec74c019aacd9ce4818fa25fc5a9e0a1f22f8c9cd1f5260994bf15cd9eb63",
+  "ollama_image": "ollama/ollama@sha256:5c6707fcf2e1a30cffe2ecb7e315584fc87747c389327e4bc711c4959aa1eecc",
+  "platform": "linux/amd64",
+  "crane_plus_commit": "19c1d6069126cd27488bf1bbefd410704bfc515d",
+  "ROS_DISTRO": "humble",
+  "ignition": {
+    "gazebo_major": 6,
+    "transport_major": 11,
+    "msgs_major": 8
+  },
+  "Fuel": [
+    {
+      "name": "Sun",
+      "version": 3,
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun/3/Sun.zip"
+    },
+    {
+      "name": "Ground Plane",
+      "version": 5,
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground%20Plane/5/Ground%20Plane.zip"
+    },
+    {
+      "name": "Table",
+      "version": 4,
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Table/4/Table.zip"
+    }
+  ],
+  "Fuel_version_source": "Existing THIRD_PARTY_NOTICES dated 2026-10-24. Fetch validates model.config and writes file hash manifest; cache identity is verified separately, not assumed from these URLs.",
+  "model_pin": "code/MODEL_PIN.json"
+}

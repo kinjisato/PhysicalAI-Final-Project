@@ -1,0 +1,12 @@
+# Optional local-only convenience. Not used by the documented clean path.
+services:
+  simulator:
+    volumes:
+      - type: volume
+        source: model
+        target: /model-source
+        read_only: true
+volumes:
+  model:
+    external: true
+    name: ${PAI_MODEL_VOLUME:?Set an explicitly selected existing model volume}

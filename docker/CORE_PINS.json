@@ -1,0 +1,122 @@
+{
+  "unchanged_files": {
+    "code/experiments/schema6_C03_stable_01/io_guard.py": "802f96aadecaa986268bd330f17aef596380ae0cba0f4dc69edf646ddbfb7662",
+    "code/experiments/schema6_C03_stable_01/persistent_rpc.py": "8f5dafc86ca2135e90c403efc75d0182fb448086004f8b8a112949e33ea1b68d",
+    "code/experiments/schema6_C03_stable_01/runtime/config/planner_training_examples.json": "16521d72efc7a9dc6e9a617021bb3320ba326a061d139bd97cce63b3be103756",
+    "code/experiments/schema6_C03_stable_01/runtime/config/scene.json": "ae2a370a2c30648e7602b87f0683f8b911d4f222fbac40dadecb7f2327cc0cbe",
+    "code/experiments/schema6_C03_stable_01/runtime/src/audit.py": "206ea2b5036298e62e4cd8b3541745f9cd852160bfa0a99521f92ad40e98bfdf",
+    "code/experiments/schema6_C03_stable_01/runtime/src/executor.py": "b3751b9074a7d37360c138a3476b5aa6005829a8bb1eb5bc2668f7205479bd90",
+    "code/experiments/schema6_C03_stable_01/runtime/src/feedback.py": "312a6fd66cf6ac53ac8b09b31dda928e09540a685bb36535890db934ea433709",
+    "code/experiments/schema6_C03_stable_01/runtime/src/mission.py": "890214973be21a5658979dc9deb9fdbf11004405f1fda082b248eb7f83cede27",
+    "code/experiments/schema6_C03_stable_01/runtime/src/mission_adapter.py": "95f31bde9a5f57f2834322a0ec6c307d32abce58dcf019e7af5faf3917b8bd11",
+    "code/experiments/schema6_C03_stable_01/runtime/src/scene.py": "3ce32adce9c8e90a287b1d0fba6c34af5331f257706fcc3209ff461624bd83a7",
+    "code/experiments/schema6_C03_stable_01/runtime/src/storage.py": "c5714cb5ea10b1ba30d62cb95a57cd00fde55d2647071daf65e89debdd11cfa6",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/docker_run/prepare_inside.py": "a2ca6588d7bf867e12c4879f7ab65e9b0b59635201922a20b44f625cd6f370ae",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/config/minimal.rviz": "20c0a1dec517eb08888fcdb988dc7b5e8fba31019c90532637562f08bebbe370",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/config/seeds.json": "0e37d567a0588ae924739c2e0f4bbf467b831ddf207592994e93acdd9c712cf3",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/launch/minimal.launch.py": "2173f40d636929d44210c74161f07b369c430ba5a6751e0789067590615f66c4",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/src/ai.py": "ecf616c3345e5495d9d546bee92f621b06eb2a7f1f104efdae92b2fa0d6eb180",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/src/backend.py": "03964465ecf5bd50a024161894449b6f93fc98cbcb71e2f5f4e7ad825f0105d0",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/src/core.py": "bed2a10cafe88a3b736f774d872664bbb6873663f9e8b174f0467631429324c9",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/src/run.py": "bd704c20cdd7703b884680e075887b296451547c85563b3b564704965c602480",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/tools/fetch_vendor.py": "cf36e999132960fe316b31c6027cee4b47c4319113d0d171527d08b26899a2a8",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/vendor/source_manifest.json": "5a3add3c4e4f640a4614326d55ad06aff4ec6586a0c869dc03e229fd7bb9c616",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/worlds/minimal.sdf": "d2d21581fc85123398f56c2886712ca8e77b447dd5b1d3f5919fbeda7abfd288",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/config/frozen_scene.json": "ae2a370a2c30648e7602b87f0683f8b911d4f222fbac40dadecb7f2327cc0cbe",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/config/prompt_examples.json": "521ae90948d958a71c915ab5041e89fbffcf5ba122f0fa51025738267284f909",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/config/seeds.json": "0e37d567a0588ae924739c2e0f4bbf467b831ddf207592994e93acdd9c712cf3",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/src/ai.py": "ad47f6a512b60a437381f92d2e0b731b0f3b97c0e987cb0945586a9623d69dee",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/src/backend.py": "03964465ecf5bd50a024161894449b6f93fc98cbcb71e2f5f4e7ad825f0105d0",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/src/core.py": "02723fce07252ed84d8100bda080ed7a198f4073a1da572cd6926db796fd037c",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/src/nlu_contract.py": "9b043efadb8e0eacdef9ee74acea7d23d3fbcd3a25bd4dc7383a00909e911c81",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/src/run.py": "c0b65698d7a4da78776360d613bc7876ba61dbcbe010bb18523d89672c9eaa52",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/src/safety.py": "8b35b62e0742866ec7cbeab5eb9af5afd5e9fc535c63134c7a93094edac505c9",
+    "code/experiments/schema6_C03_stable_01/sdf_guard.py": "17b894faceefcf49877ab402038afcbd6f95bef601e498eb60b4a37de1311709",
+    "code/experiments/schema6_C03_stable_01/sdf_rpc_worker.cpp": "603efa5fd1fac279745203738fc946f9c0bef64c6540d2b0d1a6a2a52c191832",
+    "code/experiments/schema6_C03_stable_01/session_log.py": "3cec745e2cd0a32e684ac407e4ef1ec894f645ab619b072b6590e4f4590ea1b1",
+    "code/experiments/schema6_limited_C_03/limited.py": "ccc0048c8fcc13927e2ece4b313d5943babcb42a73d3ab1df9267d1a4c0a49de",
+    "code/experiments/schema6_limited_C_03/veto.py": "55b4c960e84e2b56372244b4aab609acbb9b89421ddf02e2166fef8b8a1f19a4",
+    "code/inputs/schema6/src/audit.py": "206ea2b5036298e62e4cd8b3541745f9cd852160bfa0a99521f92ad40e98bfdf",
+    "code/inputs/schema6/src/mission.py": "890214973be21a5658979dc9deb9fdbf11004405f1fda082b248eb7f83cede27",
+    "code/inputs/schema6/src/scene.py": "3ce32adce9c8e90a287b1d0fba6c34af5331f257706fcc3209ff461624bd83a7",
+    "code/inputs/schema6/src/storage.py": "c5714cb5ea10b1ba30d62cb95a57cd00fde55d2647071daf65e89debdd11cfa6"
+  },
+  "runner_file": "code/experiments/schema6_C03_stable_01/live_run.py",
+  "runner_function_AST_sha256": {
+    "CriticalSafety": "4adc3b9fb8e3a57ff161643117967fe058bf561ba5b299f9b5b18ab98923b48f",
+    "FACTORY": "ba1856181de5328eb5778baa10a8122c6597829937742fab45706c5397f8e026",
+    "progress": "be71d936e013c8006c3b0984a8d817f5aab0b2998c17bf0cff2bbc85a1f2d0a5",
+    "stopped": "64d5b0af83152666c64c8134633573eee0ccd07c3290816f670d031c781ecc9e",
+    "signal_stop": "e7946801bec5d8dede804bf661870a9ef74de56f76b99e2e49675e670262e8cd",
+    "hashes_ok": "3413c2f784b0d0651dba14c9bf720e8a95d9b0b6d1d1bd9ab1edea9ee31aaa27",
+    "resources": "ece0b763fd94f619558cdc4acded7094295f5a120975a8c7f5168b85bbda6e53",
+    "check_model": "1cc868d66e7bc11dfbdeaf7650f8be5e9b89a5e9cde79d78c5863c6cb1220d63",
+    "readonly_cli": "9b4ee6b54f459e7b862f23b3b9c95901417a021bc14e4eef421682d2ca882a64",
+    "pause_fallback": "afa011baa10bd3cc72dea4b8114f1976eca0dec7d3d021f925fbb9df8451f776",
+    "wait": "8a1bb5c3d2ce23ce9fd572c2daf46b1492e78dd8e9038ddc17a33adc7f04b09e",
+    "hold": "671476e3d5d92ed11960a6488ce6cafa20b6945dae1c635a0fd417b2e89c8fd0",
+    "cancel_hold": "9002b37f072a0bdecc7df03e55760d26b2f42d63687bb288e6a41751f46aeb64",
+    "GoalGate": "56a32313703cc373e6791541fabc9ff4cca15757dde2ad589d232aa7ae9f57ff",
+    "current_state": "ef680007a84ff0eb8c950d697bb899f1473f123821afda4771bfb39119cd4dd9",
+    "stop_probe": "8c3b5a40c37ab74f003ead7ef966a7c47c473abf5c8823f21667088851951316",
+    "revalidate_stop_proof": "0dff6845a427254635b870a22e1310d536a91bd8f20999c13e8b6412e6c02719",
+    "matched": "5c50b58aee16a5c5e8cb4753cce47a762c5d82a9de11de50fb6547ec5901eaf6",
+    "meaning_scores": "f2ff1e78f7e7b150d53d7acc28f9992186527a2cf85489b4157d1775d436237a",
+    "run_case": "d8ec8d9c13446637308452a63a67bac45cc118f51e80302c6918831e79f91aed",
+    "main": "64b669f93a022ee01b26562f1e98bbbfce06ffbd9ae2a6f5e86ce5188cf10b9b"
+  },
+  "model_identity": {
+    "model": "qwen2.5:3b",
+    "api_logical_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "manifest_file_sha256": "cd232a7a8d590449a99eb8fe29b614ef9bf3624d2d17faa496e1135ba4188be0",
+    "blobs": {
+      "sha256:357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b": {
+        "actual_sha256": "sha256:357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+        "bytes": 857
+      },
+      "sha256:b5c0e5cf74cf51af1ecbc4af597cfcd13fd9925611838884a681070838a14a50": {
+        "actual_sha256": "sha256:b5c0e5cf74cf51af1ecbc4af597cfcd13fd9925611838884a681070838a14a50",
+        "bytes": 7387
+      },
+      "sha256:eb4402837c7829a690fa845de4d7f3fd842c2adee476d5341da8a46ea9255175": {
+        "actual_sha256": "sha256:eb4402837c7829a690fa845de4d7f3fd842c2adee476d5341da8a46ea9255175",
+        "bytes": 1482
+      },
+      "sha256:66b9ea09bd5b7099cbb4fc820f31b575c0366fa439b08245566692c6784e281e": {
+        "actual_sha256": "sha256:66b9ea09bd5b7099cbb4fc820f31b575c0366fa439b08245566692c6784e281e",
+        "bytes": 68
+      },
+      "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6": {
+        "actual_sha256": "sha256:5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6",
+        "bytes": 1929903008
+      },
+      "sha256:161ddde4c9cd07c9f1ccb4e0167c434bce72caeb3fc1844262fa66bc877b0426": {
+        "actual_sha256": "sha256:161ddde4c9cd07c9f1ccb4e0167c434bce72caeb3fc1844262fa66bc877b0426",
+        "bytes": 487
+      }
+    }
+  },
+  "note": "Pins derived by comparing this public copy to the read-only successful source. Entry-point/file-layout changes are separate; function bodies are unchanged.",
+  "AST_signature": "Python3.10+ structural JSON; locations and absent/empty type_params ignored, nonempty generic parameters retained",
+  "removed_unused_pinned_paths": {
+    "code/experiments/schema6_C03_stable_01/runtime/start_inspection.sh": "b77d87dff3aede45b89d2865be0a1c244f377bdb99c32b40ddc11429663527e7",
+    "code/experiments/schema6_C03_stable_01/runtime/stop_inspection.sh": "babef71ff855654c04ff491c6e4ce03fcd9ead928345ac36235bbdc48f814f76",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/docker_run/command_display.py": "1a7cd8489d0c271c886971ad655ef228d06017b43009076f787e547c50e07730",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/docker_run/command_inside.py": "2dd033dc32ae2b0de6d91a22a7096ed33e460cde563c3a5d0ceebe030884682e",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/.dockerignore": "6511390e7fd26fc1ae75a92a9ec7c7723a59e4e6322a3fd3939d770e469891c5",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/docker/bootstrap.sh": "32e58f4fc265b727fb00b04d9b0e2752779e0be60efa36e4aef0dbbfaaef534a",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/config/recording.rviz": "1fe2088a3b53c25f9d48b9af7a447dde617f65cb0d2af1bd6563c72b9280e27f",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/config/robot.srdf": "61db40f7f025d4cfba43268bb5d076aa3e9bd12d626b9077223cc8b718e7e0d4",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/results/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/results/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/config/minimal.rviz": "20c0a1dec517eb08888fcdb988dc7b5e8fba31019c90532637562f08bebbe370",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/config/recording.rviz": "1fe2088a3b53c25f9d48b9af7a447dde617f65cb0d2af1bd6563c72b9280e27f",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/config/robot.srdf": "61db40f7f025d4cfba43268bb5d076aa3e9bd12d626b9077223cc8b718e7e0d4",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/config/llm.schema.json": "fb96bea58938efe14300815a72114a3476dbde389092537a597ff8947347a289",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/config/nlu.schema.json": "4153d85bd1af17b7be24b3295ae8e7fbe0f0c94bdd0aa7861dbefe07bf49710e",
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/v2/config/nlu_cases.json": "9a703d868ed9c0ec1acab616440f6ad5e37552820b9ab1518c674b37eff681bd"
+  },
+  "documentation_reference_update": {
+    "code/experiments/schema6_C03_stable_01/runtime/vendor/fix2/environment/minimal/THIRD_PARTY.md": "0ea5a07d3f7c68831952bc930f4015cd0b51ea07dae313cf4334f971a6bd3b3f"
+  }
+}

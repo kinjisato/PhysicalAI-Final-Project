@@ -1,0 +1,38 @@
+{
+  "purpose": "training only; excluded from all evaluation batches",
+  "examples": [
+    {
+      "input": "オレンジの次にブルーを二度チェック",
+      "output": {
+        "status": "ready",
+        "targets": [
+          "オレンジ",
+          "青",
+          "青"
+        ],
+        "reason": "明示された順序と二度の訪問"
+      }
+    },
+    {
+      "input": "イエローとグリーンをチェック。グリーンは対象外",
+      "output": {
+        "status": "ready",
+        "targets": [
+          "黄"
+        ],
+        "reason": "否定対象は訪問しない"
+      }
+    },
+    {
+      "input": "黒は対象外として、グリーンの次にオレンジを点検してください",
+      "output": {
+        "status": "ready",
+        "targets": [
+          "緑",
+          "オレンジ"
+        ],
+        "reason": "先行する除外を適用した要求順"
+      }
+    }
+  ]
+}

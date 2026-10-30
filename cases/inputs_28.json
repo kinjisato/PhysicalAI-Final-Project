@@ -1,0 +1,142 @@
+[
+  {
+    "case_id": "N01",
+    "group": "new_paraphrase",
+    "instruction": "緑、いや、最初は黄色。その後で青"
+  },
+  {
+    "case_id": "N02",
+    "group": "new_paraphrase",
+    "instruction": "黄色と緑を確認して。青は見なくていい"
+  },
+  {
+    "case_id": "N03",
+    "group": "new_paraphrase",
+    "instruction": "緑を二回確認して"
+  },
+  {
+    "case_id": "P2A1",
+    "group": "additional15",
+    "instruction": "青から始めて黄色、最後に緑を確認"
+  },
+  {
+    "case_id": "P2A2",
+    "group": "additional15",
+    "instruction": "まず緑、そのあと黄色、最後に青"
+  },
+  {
+    "case_id": "P2A3",
+    "group": "additional15",
+    "instruction": "青色の対象物を点検してください"
+  },
+  {
+    "case_id": "P2B1",
+    "group": "additional15",
+    "instruction": "青を2回、そのあと黄色を1回"
+  },
+  {
+    "case_id": "P2B2",
+    "group": "additional15",
+    "instruction": "黄色を見る前に緑を点検して"
+  },
+  {
+    "case_id": "P2B3",
+    "group": "additional15",
+    "instruction": "緑を見た後、青を2回確認して"
+  },
+  {
+    "case_id": "P2C1",
+    "group": "additional15",
+    "instruction": "青と黄色を確認。いや、黄色はやめて緑にして"
+  },
+  {
+    "case_id": "P2C2",
+    "group": "additional15",
+    "instruction": "緑以外を確認して、最後に緑へ"
+  },
+  {
+    "case_id": "P2C3",
+    "group": "additional15",
+    "instruction": "赤を除外して青と黄色を点検"
+  },
+  {
+    "case_id": "P2D1",
+    "group": "additional15",
+    "instruction": "赤と紫だけを点検"
+  },
+  {
+    "case_id": "P2D2",
+    "group": "additional15",
+    "instruction": "赤、青、紫、黄色の順に確認"
+  },
+  {
+    "case_id": "P2D3",
+    "group": "additional15",
+    "instruction": "青、赤、青の順に確認"
+  },
+  {
+    "case_id": "P2E1",
+    "group": "additional15",
+    "instruction": "青を掴んで移動して"
+  },
+  {
+    "case_id": "P2E2",
+    "group": "additional15",
+    "instruction": "青の異常を判定して"
+  },
+  {
+    "case_id": "P2E3",
+    "group": "additional15",
+    "instruction": "適当に何かを点検して"
+  },
+  {
+    "case_id": "P3B10",
+    "group": "boundary",
+    "instruction": "青を10回確認して"
+  },
+  {
+    "case_id": "P3B11",
+    "group": "boundary",
+    "instruction": "青を11回確認して"
+  },
+  {
+    "case_id": "P3B9",
+    "group": "boundary",
+    "instruction": "青を9回確認して"
+  },
+  {
+    "case_id": "T01",
+    "group": "basic7",
+    "instruction": "青、黄、緑の順番に近づいて"
+  },
+  {
+    "case_id": "T02",
+    "group": "basic7",
+    "instruction": "青、青、黄の順に点検して"
+  },
+  {
+    "case_id": "T03",
+    "group": "basic7",
+    "instruction": "青、青、黄、緑、青の順に点検して"
+  },
+  {
+    "case_id": "T04",
+    "group": "basic7",
+    "instruction": "青、赤、黄、緑の順に点検して"
+  },
+  {
+    "case_id": "T05",
+    "group": "basic7",
+    "instruction": "緑、赤、黄、紫、青の順に点検して"
+  },
+  {
+    "case_id": "T06",
+    "group": "basic7",
+    "instruction": "青と黄色を見て。緑は見なくていい"
+  },
+  {
+    "case_id": "T07",
+    "group": "basic7",
+    "instruction": "青、いや、最初は緑。そのあと黄色"
+  }
+]

@@ -1,0 +1,378 @@
+{
+  "crane_plus_description/launch/display.rviz": {
+    "sha256": "62901aa8da200fcb75bf4ffeaa0f8a66a6379e3442cd2fdb8680df8feebf9a45",
+    "mode": 420
+  },
+  "crane_plus_description/launch/display.launch.py": {
+    "sha256": "89f555be8c1048d90aa41b62554644ac71ea72082f7fa0de592f7558e4a6fa40",
+    "mode": 420
+  },
+  "crane_plus_description/launch/endtip_display.launch.py": {
+    "sha256": "d0c986cd4cd4c0c3a8824574b3d8405091b1b7ce5b266f4aec0499a2cea0900e",
+    "mode": 420
+  },
+  "crane_plus_description/crane_plus_description/robot_description_loader.py": {
+    "sha256": "bed234ee12b7d9198e00ec5db33991a7c7e96667a06b78837e3c76ae8af788a4",
+    "mode": 493
+  },
+  "crane_plus_description/crane_plus_description/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": 420
+  },
+  "crane_plus_description/urdf/camera_stand.urdf.xacro": {
+    "sha256": "93b9dd375a5c10585ecd60db2125d935e7149d922c759e173db3f9c1c79d3012",
+    "mode": 420
+  },
+  "crane_plus_description/urdf/crane_plus.ros2_control.xacro": {
+    "sha256": "6f5372419e256e7e77731a0df6b80fdab2cd0b27eae768eb281d13119ed0839f",
+    "mode": 420
+  },
+  "crane_plus_description/urdf/crane_plus.urdf.xacro": {
+    "sha256": "ba70653fb35d416fd4c68180745dea3a802c5ddb1b3ce162877c36dfaed294c7",
+    "mode": 420
+  },
+  "crane_plus_description/urdf/crane_plus.gazebo_ros2_control.xacro": {
+    "sha256": "87ae1a3dec19dedc150b890e02e62b557775af144858ee1a49e7c05d9aadc1ab",
+    "mode": 420
+  },
+  "crane_plus_description/urdf/camera.urdf.xacro": {
+    "sha256": "7f74b40d701b147902c5fab4e9cb1f0ea6d13f0ee06cbb07b2c7387842811c2b",
+    "mode": 420
+  },
+  "crane_plus_description/urdf/crane_plus.gazebo.xacro": {
+    "sha256": "61be1dbecd117e42b611afeae16814339173f6c56004519811a03a2f201954ea",
+    "mode": 420
+  },
+  "crane_plus_description/urdf/crane_plus.xacro": {
+    "sha256": "818937039bfb1fb0d57de9e9c1179bef796e7682484286f27d406a81c76c7761",
+    "mode": 420
+  },
+  "crane_plus_description/README.md": {
+    "sha256": "21bf998777eb8af0b2d07791e8ccd1cf9cb77e25d0caff1ab37681d61e3a273e",
+    "mode": 420
+  },
+  "crane_plus_description/test/test_robot_description_loader.py": {
+    "sha256": "f3f68ca47f98c4e5138d9337088c28059b795432fe1569bc6e23b0e31a76c872",
+    "mode": 420
+  },
+  "crane_plus_description/test/dummy_controllers.yaml": {
+    "sha256": "e940b001785afdc1fd0dc78816fab0af0f16cfc7f9e9e0fbc943b2487c4babfa",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/collision/Link3_collision_20201013.stl": {
+    "sha256": "22c4c218ae9713246418bbdc7b79b9ffebe3fdc264a34d97a25b161a3976b800",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/collision/Hand_collision_20201013.stl": {
+    "sha256": "a168611127f4162c2911070afc18c02f1a591f2d569b9ec22b1a87db9a8ff079",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/collision/Link4_collision_20201013.stl": {
+    "sha256": "08760521067e4548045fe1245af1355eacee1c9efefbcc2cfbfe55de5ce5a435",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/collision/Link2_collision_20201013.stl": {
+    "sha256": "269da08888436d16e4681f1affc857419d92e79c94c6530b96c1a72af3e6ee0f",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/collision/body_collision_20201013.stl": {
+    "sha256": "dc4190fd3db477b0f4170be4093bb341ef4af0829688ad93040389ba59a4f5a0",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/collision/Link1_collision_20201013.stl": {
+    "sha256": "0f75cb8fc3d516f4726425a2deb16b77331e0a7599ad6e97593c2f226f5a6f95",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/visual/Hand_20201013.stl": {
+    "sha256": "ed77aafd5ad15cf0b29cf1e4ece0f2c5c9856ed924d9f416f1dc32009448d712",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/visual/Link4_20201013.stl": {
+    "sha256": "b8fb401be0e95c77c364b0664e774216ed6e8582d708e1094714511523950ed8",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/visual/Link2_20201013.stl": {
+    "sha256": "9a8706ad49db9aa291c94807d9df0256a0de8c209a6b823aeba91af93708d4a4",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/visual/Link3_20201013.stl": {
+    "sha256": "3c6763e6117ee0fe1f52dd34ab7ac065f25af8edb54c823ca4f671682f53f293",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/visual/Link1_20201013.stl": {
+    "sha256": "b90d24c6de7802612c7be80a5c130007e9141f01fc79c0c562fbbaa3d1a5f98c",
+    "mode": 420
+  },
+  "crane_plus_description/meshes/visual/body_20201013.stl": {
+    "sha256": "c0674ca1ec8e75fb1d814565350cbb2203fdef02d18e912a9e35b325d896976f",
+    "mode": 420
+  },
+  "crane_plus_description/package.xml": {
+    "sha256": "cf9e00d8fa8264e74e8729714f71aa7dca845d819e0ec6ffbc5b266455e1a895",
+    "mode": 420
+  },
+  "crane_plus_description/CHANGELOG.rst": {
+    "sha256": "107bb747d1fd4c20682e6706a7db3ab3dcf3da12224cef24cedbaaa5e26169f0",
+    "mode": 420
+  },
+  "crane_plus_description/CMakeLists.txt": {
+    "sha256": "bdc5e4b32d60129f65b87747f72acba605e5b87d3aa5b64aa657750b02da5e64",
+    "mode": 420
+  },
+  "README.md": {
+    "sha256": "f929cc3194411e187888f9c619ebc492bd750745930ef79e4aa792fe7cb05d52",
+    "mode": 420
+  },
+  "crane_plus_control/launch/crane_plus_control.launch.py": {
+    "sha256": "0375df5a48d094bf9065c851bafceacbf77c683cb091bda73f9b6e3615897e76",
+    "mode": 420
+  },
+  "crane_plus_control/crane_plus_hardware.xml": {
+    "sha256": "f06096f9b7bf16351b0317a746ae86dc9c976caa037b3da74713a3bde99a38e3",
+    "mode": 420
+  },
+  "crane_plus_control/README.md": {
+    "sha256": "6b06f7dc5fc8632cf71541fd43c71e809c6289778ef9d2e5f6eee1d42a363b70",
+    "mode": 420
+  },
+  "crane_plus_control/config/crane_plus_controllers.yaml": {
+    "sha256": "e940b001785afdc1fd0dc78816fab0af0f16cfc7f9e9e0fbc943b2487c4babfa",
+    "mode": 420
+  },
+  "crane_plus_control/src/crane_plus_hardware.cpp": {
+    "sha256": "5731c85c6c3a66a7835c036f8ccf8e310cf045e6297040062ad795e9ca1ca63a",
+    "mode": 420
+  },
+  "crane_plus_control/src/crane_plus_driver.cpp": {
+    "sha256": "b04214677235f831c937fcff030c6621dc60dc3583c748179973873b85f2ac37",
+    "mode": 420
+  },
+  "crane_plus_control/package.xml": {
+    "sha256": "41ab184138cd9b9c17680f05e9481e61a50a01ae32f73957cc19b2a7a70d3b56",
+    "mode": 420
+  },
+  "crane_plus_control/CHANGELOG.rst": {
+    "sha256": "bfe0c29f0f3714fb43c80d487b27b873a775d250a967e66b6a24f5e48eb775e4",
+    "mode": 420
+  },
+  "crane_plus_control/include/crane_plus_control/crane_plus_driver.hpp": {
+    "sha256": "9d818ee87024ddf51766e40bc69d533f77103d44f1c55047ec3227591cb73d28",
+    "mode": 420
+  },
+  "crane_plus_control/include/crane_plus_control/visibility_control.h": {
+    "sha256": "2930a61a080dc8e479944a1716fb1d4330ea0445b94dd45057c13b78a6cdff36",
+    "mode": 420
+  },
+  "crane_plus_control/include/crane_plus_control/crane_plus_hardware.hpp": {
+    "sha256": "22fb3cbabcf053a56b27a791e552422660ddef919e71a119f21c5c26677f5336",
+    "mode": 420
+  },
+  "crane_plus_control/CMakeLists.txt": {
+    "sha256": "e92e05de8dcfb2049ec903ada9af94a06fab9c9a77413e0bc89464082b8b4042",
+    "mode": 420
+  },
+  ".github/workflows/build_docker_image.yml": {
+    "sha256": "3b0a3fcc36622202c657c02e3b101424ff352fc4aef6c37d9b8a235b1ee2d49f",
+    "mode": 420
+  },
+  ".github/workflows/industrial_ci.yml": {
+    "sha256": "3e691a68892686421bcd7033f9c55907c5fbcd5e8a5d4c4ce7e9835150dcd7b3",
+    "mode": 420
+  },
+  ".dockerignore": {
+    "sha256": "8c0ea30c8e72f0403a8a41a20ba6286a7b41a709ab377ffa9670c46a4e364178",
+    "mode": 420
+  },
+  "crane_plus/package.xml": {
+    "sha256": "daf4fae3cf4eba5a26de9038ff7948cd0e01a3cf2891fb5b33aea8210c34b8ba",
+    "mode": 420
+  },
+  "crane_plus/CHANGELOG.rst": {
+    "sha256": "4ee60c5a167e8cfe0d44be5ca84220d00d8dee1d0f0835d270d835c91b300622",
+    "mode": 420
+  },
+  "crane_plus/CMakeLists.txt": {
+    "sha256": "d03282b5a45fc03e1ae05fc0ec3b6be189d50fba06e81c5904b4dc861d348576",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/launch/endtip_run_move_group.rviz": {
+    "sha256": "4c37bc33533ecfb127fdfcbfbf410219b3a589e571b27d58b7a82828153564be",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/launch/run_move_group.launch.py": {
+    "sha256": "ce00fad8d25fa37be7cba2d161c18252328a1b222bf240cf4ce77522c1e39c86",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/launch/run_move_group.rviz": {
+    "sha256": "c292891ae6ea886840a130803d7581f758f7e2e66181e3d1731cb8ecbe62672d",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/README.md": {
+    "sha256": "73d77f119f04ec6f6b41f2defdfa92b405cf89c368516586382b058c2aa2180c",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/config/controllers.yaml": {
+    "sha256": "8e6a098173deb29ebe14f3661e04503ded5ddca7f4121cbbd64a8139b5144618",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/config/kinematics.yaml": {
+    "sha256": "8eacc312d221c600d0a72c40d11553c56fc2b264053c15081ded25ccb7f1ffd1",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/config/crane_plus.srdf": {
+    "sha256": "61db40f7f025d4cfba43268bb5d076aa3e9bd12d626b9077223cc8b718e7e0d4",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/config/ompl_planning.yaml": {
+    "sha256": "3ecb809a8bcbd0ecdc29b0abc620033427e1e2764213437094f007bbdc897de2",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/package.xml": {
+    "sha256": "1ed12dab0ecd37f15e16c344583495e62f26f84b15059f077c1df090d0565245",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/CHANGELOG.rst": {
+    "sha256": "003ca90aa8806a685b5cb1bdcea59e8ac155de78e894aa7f7cb2f3f32f394c33",
+    "mode": 420
+  },
+  "crane_plus_moveit_config/CMakeLists.txt": {
+    "sha256": "1e77c56d3341291ed848bff335600efd5fd5c30cd577f1cf8c0c2ce506e00747",
+    "mode": 420
+  },
+  "crane_plus_examples/launch/camera_example.launch.py": {
+    "sha256": "92deb20042936f95d658d08c6758bc148e39901f70660d4cc53e95423bab216e",
+    "mode": 420
+  },
+  "crane_plus_examples/launch/endtip_demo.launch.py": {
+    "sha256": "9febf8bd67801438c3cbc9d08db503c4b7cc7c395c32d0ceaca3471d46650330",
+    "mode": 420
+  },
+  "crane_plus_examples/launch/camera_example.rviz": {
+    "sha256": "edd46f8e93a9f1a00bcc7c7852d65e147b875a016ac6e23a2082aa9dace2a110",
+    "mode": 420
+  },
+  "crane_plus_examples/launch/demo.launch.py": {
+    "sha256": "3a472142e47ffdda2aa2227c0592a2d8f57bfd10ea3dc417a67cab9a09cdd768",
+    "mode": 420
+  },
+  "crane_plus_examples/launch/no_moveit_demo.launch.py": {
+    "sha256": "cdbca9e6a5964b6c4f6fcbe762cf3a1c93f2adf8a43f84ace2158a3382132d10",
+    "mode": 420
+  },
+  "crane_plus_examples/launch/example.launch.py": {
+    "sha256": "e91061ae542801287622a51903745ec612498b067f6fa7e65f3880ae34047b20",
+    "mode": 420
+  },
+  "crane_plus_examples/aruco_markers.pdf": {
+    "sha256": "574b8f48431de49427674635627cf5aa612f5ea143b6994eb753869e8b5c0ab2",
+    "mode": 420
+  },
+  "crane_plus_examples/README.md": {
+    "sha256": "e008f4715896a9c920848d757b31c8a6b6a8fb1167abe21554608a246aa39eb4",
+    "mode": 420
+  },
+  "crane_plus_examples/config/camera_info.yaml": {
+    "sha256": "229c444517bf0949553a3b8fbe5d8483b6bd344638ba44f0ff230bdc28c5aab8",
+    "mode": 420
+  },
+  "crane_plus_examples/src/pick_and_place.cpp": {
+    "sha256": "2ca000066f2fb86948bca07071f69119c94c69a8fa14b5ad04aba59a7650d11a",
+    "mode": 420
+  },
+  "crane_plus_examples/src/pick_and_place_tf.cpp": {
+    "sha256": "81f4dcae6ef670dc5c73db73dd134190aca8dfb4cea845f1b3a71291f185a3ba",
+    "mode": 420
+  },
+  "crane_plus_examples/src/joint_values.cpp": {
+    "sha256": "b18d81a4fee9250082600f679fe46e9cdd10085e31d69e5ceb35b80a89055601",
+    "mode": 420
+  },
+  "crane_plus_examples/src/aruco_detection.cpp": {
+    "sha256": "0ddf74c4fdfd0c2a153cab0dfc566e11c6877036f94661547e6b29065531b657",
+    "mode": 420
+  },
+  "crane_plus_examples/src/endtip_pick_and_place.cpp": {
+    "sha256": "540076c730c4764118643cf569889d46a6680332020e31e6dbc7dffd104e262f",
+    "mode": 420
+  },
+  "crane_plus_examples/src/gripper_control.cpp": {
+    "sha256": "85bb7b9793e59dcafe95b424a3734a5ebf70e2f59cf4b2b026ec13da6ef9c96b",
+    "mode": 420
+  },
+  "crane_plus_examples/src/pose_groupstate.cpp": {
+    "sha256": "bfa7a0dd4d4b061db53c1fd935f7b57c1c5e11ddf1143d5944b0ef383fa38ef8",
+    "mode": 420
+  },
+  "crane_plus_examples/src/color_detection.cpp": {
+    "sha256": "599fca0d11200d1330a7b28f950faffbfc2bae51e6fc30f7c43ed2fc11c1d674",
+    "mode": 420
+  },
+  "crane_plus_examples/package.xml": {
+    "sha256": "ba151dd1b2674b32c612062f23fe8aac208450a75443d607f51b1a7999f5617b",
+    "mode": 420
+  },
+  "crane_plus_examples/CHANGELOG.rst": {
+    "sha256": "2919147438607014edcaad6e5a0773a09d01222ef9b4f11ca508aacb04e574c5",
+    "mode": 420
+  },
+  "crane_plus_examples/CMakeLists.txt": {
+    "sha256": "1072f55adde65a40305cb9a0c31222d7c209e035233107b0436a2d5834aa1415",
+    "mode": 420
+  },
+  "crane_plus_gazebo/launch/crane_plus_with_table.launch.py": {
+    "sha256": "126aa6de380933a6d32ba7c38c2c32ff59b699fbdcf81286213b3d7bcc72be1b",
+    "mode": 420
+  },
+  "crane_plus_gazebo/launch/no_moveit_crane_plus_with_table.launch.py": {
+    "sha256": "3a294518a181d772bd78b51b9e97b1d132d6fe0e47428cc33fb44141b18c3dd8",
+    "mode": 420
+  },
+  "crane_plus_gazebo/launch/endtip_crane_plus_with_table.launch.py": {
+    "sha256": "e3d983a792548399b7884daf37b254c59d842075cd04705b14b0a8228b2c51d0",
+    "mode": 420
+  },
+  "crane_plus_gazebo/README.md": {
+    "sha256": "3b193d26d32b286bf37023911d5a77932b592215550599ed882d37c3f4a5f188",
+    "mode": 420
+  },
+  "crane_plus_gazebo/package.xml": {
+    "sha256": "1f306d3b5e51dc016266908118f2a5b2ffab49a58eb5ad0e7b489218c7bb394e",
+    "mode": 420
+  },
+  "crane_plus_gazebo/CHANGELOG.rst": {
+    "sha256": "7e54e57556fcbbe2786dcd332b35ebc877cae66e84d3c7e376296145b63da7b3",
+    "mode": 420
+  },
+  "crane_plus_gazebo/gui/gui.config": {
+    "sha256": "e31321b4eacddf6d323d6f85d648a544f6bd714a65634282c860aec382ad38ad",
+    "mode": 420
+  },
+  "crane_plus_gazebo/CMakeLists.txt": {
+    "sha256": "ed45c782ab87e1fd7aadfe51655317a14c99af13b040f7981a7827552917fd11",
+    "mode": 420
+  },
+  "crane_plus_gazebo/worlds/table.sdf": {
+    "sha256": "cf0980d27f6d39311a70d0455cab4b872e578b0dd4bcf0372240396a286efba5",
+    "mode": 420
+  },
+  ".gitignore": {
+    "sha256": "624a5426065b270ca75c23186a1505ffee41362f7243b65c3bbd3fb8a83ab7de",
+    "mode": 420
+  },
+  ".docker/build_source.sh": {
+    "sha256": "799c2869f4643cf1ed46c8e11de4fc8b8d57fe7f17a60dde7ef68a81c199082c",
+    "mode": 493
+  },
+  ".docker/README.md": {
+    "sha256": "dec372a047c00dcfde3a33f0dcf1037e34dfbf49536213f42e8898dd4c85a5ab",
+    "mode": 420
+  },
+  ".docker/source/Dockerfile": {
+    "sha256": "05637bc704a8b3beea23a76b526aaab9147d70058e5d8f7cb46767d7e1728d61",
+    "mode": 420
+  },
+  "LICENSE": {
+    "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+    "mode": 420
+  }
+}

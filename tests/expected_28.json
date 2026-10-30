@@ -1,0 +1,446 @@
+{
+  "N01": {
+    "expected_status": "ready",
+    "expected_visits": [
+      "B",
+      "A"
+    ],
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "黄",
+      "青"
+    ]
+  },
+  "N02": {
+    "expected_status": "ready",
+    "expected_visits": [
+      "B",
+      "C"
+    ],
+    "expected_skipped": [],
+    "expected_excluded": [
+      "A"
+    ],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "黄",
+      "緑"
+    ]
+  },
+  "N03": {
+    "expected_status": "ready",
+    "expected_visits": [
+      "C",
+      "C"
+    ],
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "緑",
+      "緑"
+    ]
+  },
+  "P2A1": {
+    "expected_visits": [
+      "A",
+      "B",
+      "C"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "青",
+      "黄",
+      "緑"
+    ]
+  },
+  "P2A2": {
+    "expected_visits": [
+      "C",
+      "B",
+      "A"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "緑",
+      "黄",
+      "青"
+    ]
+  },
+  "P2A3": {
+    "expected_visits": [
+      "A"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "青"
+    ]
+  },
+  "P2B1": {
+    "expected_visits": [
+      "A",
+      "A",
+      "B"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "青",
+      "青",
+      "黄"
+    ]
+  },
+  "P2B2": {
+    "expected_visits": [
+      "C",
+      "B"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "緑",
+      "黄"
+    ]
+  },
+  "P2B3": {
+    "expected_visits": [
+      "C",
+      "A",
+      "A"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "緑",
+      "青",
+      "青"
+    ]
+  },
+  "P2C1": {
+    "expected_visits": [
+      "A",
+      "C"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [
+      "B"
+    ],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "青",
+      "緑"
+    ]
+  },
+  "P2C2": {
+    "expected_visits": [],
+    "expected_status": "clarification_required",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "clarification_required"
+  },
+  "P2C3": {
+    "expected_visits": [
+      "A",
+      "B"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [
+      "赤"
+    ],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "青",
+      "黄"
+    ]
+  },
+  "P2D1": {
+    "expected_visits": [],
+    "expected_status": "no_valid_targets",
+    "expected_skipped": [
+      "赤",
+      "紫"
+    ],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "赤",
+      "紫"
+    ]
+  },
+  "P2D2": {
+    "expected_visits": [
+      "A",
+      "B"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [
+      "赤",
+      "紫"
+    ],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "赤",
+      "青",
+      "紫",
+      "黄"
+    ]
+  },
+  "P2D3": {
+    "expected_visits": [
+      "A",
+      "A"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [
+      "赤"
+    ],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "青",
+      "赤",
+      "青"
+    ]
+  },
+  "P2E1": {
+    "expected_visits": [],
+    "expected_status": "unsupported",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "unsupported"
+  },
+  "P2E2": {
+    "expected_visits": [],
+    "expected_status": "unsupported",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "unsupported"
+  },
+  "P2E3": {
+    "expected_visits": [],
+    "expected_status": "clarification_required",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "clarification_required"
+  },
+  "P3B10": {
+    "expected_visits": [
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青"
+    ]
+  },
+  "P3B11": {
+    "expected_visits": [],
+    "expected_status": "error",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青"
+    ]
+  },
+  "P3B9": {
+    "expected_visits": [
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_model_status": "ready",
+    "expected_raw_targets": [
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青",
+      "青"
+    ]
+  },
+  "T01": {
+    "expected_visits": [
+      "A",
+      "B",
+      "C"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_raw_targets": [
+      "青",
+      "黄",
+      "緑"
+    ],
+    "expected_model_status": "ready"
+  },
+  "T02": {
+    "expected_visits": [
+      "A",
+      "A",
+      "B"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_raw_targets": [
+      "青",
+      "青",
+      "黄"
+    ],
+    "expected_model_status": "ready"
+  },
+  "T03": {
+    "expected_visits": [
+      "A",
+      "A",
+      "B",
+      "C",
+      "A"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_raw_targets": [
+      "青",
+      "青",
+      "黄",
+      "緑",
+      "青"
+    ],
+    "expected_model_status": "ready"
+  },
+  "T04": {
+    "expected_visits": [
+      "A",
+      "B",
+      "C"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [
+      "赤"
+    ],
+    "expected_excluded": [],
+    "expected_raw_targets": [
+      "青",
+      "赤",
+      "黄",
+      "緑"
+    ],
+    "expected_model_status": "ready"
+  },
+  "T05": {
+    "expected_visits": [
+      "C",
+      "B",
+      "A"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [
+      "赤",
+      "紫"
+    ],
+    "expected_excluded": [],
+    "expected_raw_targets": [
+      "緑",
+      "赤",
+      "黄",
+      "紫",
+      "青"
+    ],
+    "expected_model_status": "ready"
+  },
+  "T06": {
+    "expected_visits": [
+      "A",
+      "B"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [
+      "C"
+    ],
+    "expected_raw_targets": [
+      "青",
+      "黄"
+    ],
+    "expected_model_status": "ready"
+  },
+  "T07": {
+    "expected_visits": [
+      "C",
+      "B"
+    ],
+    "expected_status": "ready",
+    "expected_skipped": [],
+    "expected_excluded": [],
+    "expected_raw_targets": [
+      "緑",
+      "黄"
+    ],
+    "expected_model_status": "ready"
+  }
+}
